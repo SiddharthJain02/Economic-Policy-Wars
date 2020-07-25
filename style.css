@@ -1,0 +1,103 @@
+#main{
+    display: grid;
+    width: 95%;
+    margin: 12px 0px 0px 2.5%;
+    background-color: beige;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px black;
+    grid-template-areas: 
+    'input output';
+}
+.container{
+    /* border: 2px solid red; */
+    margin: 20px;
+}
+.primeryh{
+    text-align: center;
+    /* border: 2px solid green; */
+    font-family: 'Mukta', sans-serif;
+    font-size: 2rem;
+    color: indigo;
+    text-shadow: 1px 1px 2px black;
+}
+/* .data{ */
+    /* border: orange 2px solid; */
+/* } */
+#input{
+    grid-area: input;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+#input p{
+    margin: 35px 0px;
+    /* border: 2px solid red; */
+}
+#output{
+    grid-area: output;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+#graph{
+    grid-area: graph;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+#info{
+    width: 95%;
+    background-color: beige;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px black;
+    margin: 12px 0px 0px 2.5%;
+    padding: 12px;
+}
+#info ul li{
+    list-style: none;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 12px;
+}
+#output ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 28px;
+    width: 25rem;
+    background-color: rgb(243, 255, 242);
+    box-shadow: 2px 2px 4px black;
+    margin: 10px 0px;
+    border-radius: 20px;
+    
+}
+/* #graph div{
+    border: 2px solid black;
+}
+#graph ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 28px;
+    width: 300px;
+    background-color: rgb(111, 252, 106);
+    margin: 10px 0px;
+    border-radius: 20px;
+} */
+.slider{
+    width: 500px;
+}
+#btn{
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}

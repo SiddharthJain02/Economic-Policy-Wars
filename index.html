@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="main">
+        <div class="container" id="output">
+            <h1 class="primeryh">OUTPUT</h1>
+            <div>
+                <ul>
+                    <li>Consumption: <span id="C"></span></li>
+                    <li>Investment: <span id="I"></span></li>
+                    <li>Government expenditure: <span id="G"></span></li>
+                    <li>GDP of country: <span id="Y"></span></li>
+                    <li>Fiscal deficit of country: <span id="F_def"></span></li>
+                    <li>tax rate: <span id="t"></span></li>
+                    <li>Marginal propensity to consume: <span id="MPC"></span></li>
+                    <li>Groth rate: <span id="g"></span></li>
+                    <li>Groth rate of previous year: <span id="gold"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="input">
+            <h1 class="primeryh">INPUT</h1>
+            <div>
+                <p>
+                    <span>Enter t for next year:</span><br> 
+                    0<input type="range" id="tnext" min="0" max="100" class="slider">100<br>
+                    <span>Value: <span id="tnextvalue"></span>%</span>
+                </p>
+
+                <p>
+                    <span>Enter G for next year:</span><br>
+                    0<input type="range" id="Gnext" min="0" max="1000000000000" class="slider" step="10000000">1T<br>
+                    <span>Value: <span id="Gnextvalue"></span></span>
+                </p>
+                <button id="btn" onclick="check()">Submit</button>
+            </div>
+
+        </div>
+        
+    </section>
+    <section id="info">
+        <p class="primeryh" style="font-size: 2.2rem;">Graphs</p>
+    </section>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
